@@ -1,0 +1,127 @@
+*{
+  font-family: 'Carter One', cursive;
+}
+html,body{
+  margin:0;
+  padding:0;
+  height:100%;
+}
+body{
+  font-family: 'Carter One', cursive;
+  background-color:#3AAFA9;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/* Header */
+
+.title{
+  font-size:30px;
+  text-shadow: 0px 10px 10px rgba(0,0,0,0.5);
+  color:white;
+  text-align: center;
+  margin:auto;
+}
+.color-change{
+  color:#17252A;
+}
+
+/* Main Body */
+.main-body{
+  flex:1;
+  align-self:center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width:100%;
+}
+
+#grid-container{
+  width:600px;
+  height:600px;
+  display:flex;
+  justify-content:center;
+  align-items: center;
+  border-radius:3px;
+  margin:20px;
+  padding:20px;
+  background:#fcfcfc; 
+  border:25px solid#17252A;
+  filter: drop-shadow(0px 4px 4px rgba(0,0,0,0.5));  
+}
+.part{
+  float:left;
+  box-sizing: border-box;
+}
+
+
+
+/* Buttons */
+.btn-container{
+  display:flex;
+  flex-flow:column;
+  justify-content: center;
+  align-items:center;
+  text-align: center;
+  height:75%;
+}
+/* Gets Rid Of Little Gray Border around color */
+input[type = "color"]::-webkit-color-swatch{
+  border:none;
+}
+#color-picker{
+  background:#17252A;
+  border-radius:4px;
+  border:none;
+  outline: none;
+  width:200px;
+  height:70px;
+  filter: drop-shadow(0px 4px 4px rgba(0,0,0,0.5));
+  transition:.3s;
+}
+
+.btn-container button{
+  display:flex;
+  justify-content: center;
+  align-items:center;
+  background-color:#17252A ;
+  letter-spacing: 4px;
+  color:white;
+  margin:20px;
+  padding:20px;
+  width:200px;
+  height:70px;
+  line-height: 50px;
+  border-radius:4px;
+  border:3px solid rgba(0,0,0,0.5);
+  border:none;
+  outline: none;
+  font-size: 1.18rem;
+  transition:.3s;
+}
+.btn-container button:focus{
+  box-shadow:0px 0px 0px 1px rgba(0,0,0,0.5);
+  animation: anim-shadow .3s forwards;
+}
+#color-picker:focus{
+  box-shadow:0px 0px 0px 1px rgba(0,0,0,0.5);
+  animation: anim-shadow .3s forwards;
+}
+@keyframes anim-shadow{
+  100%{
+    box-shadow: 0px 0px 50px 20px rgba(0,0,0,0);
+  }
+}
+/* Footer */
+footer{
+  width:100%;
+  text-align:center
+}
+.credits{
+  font-size:20px;
+  text-shadow: 0px 5px 5px rgba(0,0,0,0.5);
+}
+.color-changed{
+  color:#feffff;
+}
