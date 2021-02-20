@@ -1,1 +1,1 @@
-Etch-A-Sketch Project From The Odin Project 
+Etch-A-Sketch Project Made Using HTML, CSS & Vanilla JavaScript 
